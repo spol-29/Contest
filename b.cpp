@@ -21,11 +21,13 @@ bool canStamp(vector<string>& canvas, vector<string>& stamp) {
                     if (canvas[i+x][j+y] == '.' && stamp[x][y] == '*') {
                         can = false;
                         break;
-                    }
+                    } 
                 } 
                 if (!can) break;
             }
-            if (can) return true;
+            if (can == true){
+                return true;
+            }
         }
     }
     return false;
